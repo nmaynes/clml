@@ -4,9 +4,9 @@
 #+AUTHOR:    Salvi PÃ©ter, Naganuma Shigeta, Tada Masashi, Abe Yusuke, Jianshi Huang, Fujii Ryo, Abe Seika, Kuroda Hisao
 #+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t *:t TeX:nil LaTeX:nil f:nil
 
-CL Machine-Learning is high performance and large scale statistical
-machine learning package written in Common Lisp.  It runs almost all
-major platforms and supports several Common Lisp implementations --
+CL Machine-Learning is a large scale statistical
+machine learning package written in Common Lisp. It is designed to be high-performance and run on most
+major platforms. The package currently supports several Common Lisp implementations, including
 Allegro, Lispworks and Sbcl.
 
 [[http://cl-www.msi.co.jp/solutions/knowledge/lisp-world/products/CLML.html][æ—¥æœ¬èªžç‰ˆã¯ã“ã“]]
@@ -2852,7 +2852,7 @@ Package for Latent-Dirichlet-Allocation by Hierarchical-Dirichlet-Process
                               (read-data-from-file "sample/sports-corpus-data" :external-format :utf-8)
                               :except '(0) :data-types (make-list 1202 :initial-element :numeric)))
  #<NUMERIC-DATASET>
- DIMENSIONS: õ€­·õ€­ˆ | õ€§™õ€¤– | õ€†»õ€††õ€‡‚õ€†Ÿ | õ€§¸õ€µ¾ | õ€žŽõ€½Šõ€µ› | õ€†­õ€‡‚õ€†±õ€‡Š | õ€–…õ€¼ƒ | õ€šŸõƒºõ€¢‡ | õ€¾—õ€šŸõ€¶° | õ€™€õ€¬¿õ€š‰ ...
+ DIMENSIONS: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ...
  TYPES:      NUMERIC | NUMERIC | NUMERIC | NUMERIC | NUMERIC | NUMERIC | NUMERIC | NUMERIC | NUMERIC | NUMERIC ...
  NUMBER OF DIMENSIONS: 1202
  NUMERIC DATA POINTS: 100 POINTS
@@ -2864,7 +2864,7 @@ Package for Latent-Dirichlet-Allocation by Hierarchical-Dirichlet-Process
  NUMBER OF DIMENSIONS: 42
  NUMERIC DATA POINTS: 100 POINTS
  #<NUMERIC-AND-CATEGORY-DATASET >
- DIMENSIONS: Topic ID | õ€§™õ€¤– | õ€¡žõ€­¯ | õ€¬õ€ª¦ | õ€¦¼ | õ€©¢õ€µ› | õ€±‹õ€—Šõ€œ´ | õ€…õ€»‡ | õ€¹°õ€« | õ€¸‚õƒ• ...
+ DIMENSIONS: Topic ID | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ...
  TYPES:      CATEGORY | NUMERIC | NUMERIC | NUMERIC | NUMERIC | NUMERIC | NUMERIC | NUMERIC | NUMERIC | NUMERIC ...
  NUMBER OF DIMENSIONS: 1202
  CATEGORY DATA POINTS: 42 POINTS
@@ -2875,16 +2875,16 @@ Package for Latent-Dirichlet-Allocation by Hierarchical-Dirichlet-Process
  42
 
  HDP-LDA(148): (get-trend-topics (third //) :trend :hot)
- (("Topic 9" #("õ€¯‰õ€¨³" "õƒ¢õ€©“" "õ€¬õ€ª¦" "õ€·±õ€¾§" "õ€±¤õ€šŽ" "õ€­¥õ€š¡" "õ€œŸõ€¶¹" "õ€¯‰õ€¨³õ€¡³" "õ€±¢õ€»Œ" "õ€†µõ€‡€õ€†”õ€‡Š") . 0.038236246008561785)
-  ("Topic 2" #("õ€¯‰õ€¨³" "õ€ª´õ€¸‚" "õ€†õ€†«õ€€›õ€† " "õ€ªžõ€¦½" "õ€…¹õ€…»õ€†õ€†²õ€†šõ€†ˆõ€€›" "õ€ ¥õ€¸¢" "õ€†õ€†ˆõ€€›õ€†Ÿ" "õ€¤ õ€±‹" "õ€­¯õ€¸‚" "õ€†¬õ€…ºõ€†…õ€†¼õ€…¹") . 0.036524581128946985)
-  ("Topic 13" #("õ€¡›õ€ª¦" "õ€²¦õ€¦½" "õ€ª‡õ€¡›õ€ª¦" "õ€­¯õ€¸‚" "õ„õ€¯‰" "õ€ªžõ€¦½" "õ€¡›õ€´£" "õ€ª´õ€¸‚" "õ€¦žõ‚ƒõ€›“õ€— õ€±¤" "õ€‡õ€‡ƒõ€€›") . 0.034852503455076525)
-  ("Topic 3" #("õ€±¤õ€šŽ" "õ€ªžõ€¦½" "õ€²¦õ€¦½" "õ€¤‘õ€£ª" "õ€°Œõ€¤–" "õ€²Ÿõ€±‹" "õ€²ªõ€Ÿ½" "õ€±‹õ€—Šõ€œ´" "õ€µ¦õ€½‚" "õ€††õ€‡€õ€†­") . 0.031009372447135867)
-  ("Topic 1" #("õ€†˜õ€€›õ€†·" "õ€§™õ€¤–" "õ€±¤õ€šŽ" "õ€ƒŽõ€¡¡" "õ€ƒõ€¡¡" "õ€¯“õ€¤ " "õ€¹ õ€»Œ" "õ€†Œõ€†šõ€†‚õ€€›" "õ€†¸õ€‡Šõ€†§õ€€›" "õ€¡ºõ€·—") . 0.028643711953003095)
-  ("Topic 22" #("õ€†˜õ€€›õ€†·" "õ€‡õ€€›õ€†‡" "õ€¶µõ€µ—" "õ€¤°õ€Ÿ" "õ€–½õ€®“" "õ€¥¿õ€Ÿ" "õ€ ³õ€œ" "õ€¾§õƒ‚õ€±„" "õ€¥¿õ€¸‚" "õ€•õ€±‘") . 0.027999110059900734)
-  ("Topic 17" #("õ€¡›õ€ª¦" "õ€®¨õ€±£" "õ€ª‡õ€¡›õ€ª¦" "õ€³²õ€—" "õ€ž½õ€šŽ" "õ€…»õ€€›õ€†‡õ€‡‚" "õ€ž“õ€«°" "õ€¡õ€—‡õ€±±" "õ€£²õ€»«" "õ€¼Žõ€§Žõ€±¤") . 0.024662779329262353)
-  ("Topic 5" #("õ€¶ƒõ€žµ" "õ€¼Žõ€™‰" "õ€žºõ€²" "õ€ƒõ€¡¡" "õ€·±õ€¾§" "õ€š¦õ€¥’" "õ€ƒ“õ€¡¡" "õ€¤ õ‚Ž" "õ€¦½õ€ž¶" "õ€—õ€žœ") . 0.02460766056146378)
-  ("Topic 21" #("õ€¥õ€¶˜" "õ€–¬õ€¶˜" "õƒõ€ƒ" "õ€¤‘õ€Ÿ‹" "õ€¥õ€€˜õ€ƒ" "õ€™ õ€¶˜" "õ€›Œõ€µ›" "õ€†—õ€†­õ€‡‚õ€†" "õ€¡º" "õ€†Žõ€†¢õ€…¹") . 0.02451716039711171)
-  ("Topic 35" #("õ€¬šõ€›ž" "õ€½¸õ€˜ˆ" "õ€ª³õ€®ªõ€²†" "õ€µ¦õ€½‚" "õ€¶ƒõ€žµ" "õ€³²õ€™‰" "õ€ª³õ‚¸" "õ€³´õ€™õ€—" "õ€³¾õ€·£" "õ€¿˜õ€¤‘õ€¤‘õ€¢‡") . 0.02444346223102492))
+ (("Topic 9" #("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½") . 0.038236246008561785)
+  ("Topic 2" #("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½") . 0.036524581128946985)
+  ("Topic 13" #("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½") . 0.034852503455076525)
+  ("Topic 3" #("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½") . 0.031009372447135867)
+  ("Topic 1" #("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½") . 0.028643711953003095)
+  ("Topic 22" #("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½") . 0.027999110059900734)
+  ("Topic 17" #("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½") . 0.024662779329262353)
+  ("Topic 5" #("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½") . 0.02460766056146378)
+  ("Topic 21" #("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½") . 0.02451716039711171)
+  ("Topic 35" #("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½") . 0.02444346223102492))
 
 ** Dirichlet-Process-Mixture
 Package for Dirichlet Process Mixture
